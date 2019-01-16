@@ -142,12 +142,14 @@ body {
   font-size: 20px;
   line-height: 1.4;
   font-family: sans-serif;
+  background-color: lightgray;
 }
 
 .container {
-  width: 880px;
+  width: 900px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 10px 30px;
+  background-color: white;
 }
 
 h1 {
@@ -177,6 +179,12 @@ strong {
   color: @linkColor;
   font-size: 30px;
   font-family: sans-serif;
+  font-weight: bold;
+}
+.enter {
+  font-size: 20px;
+  color: @linkColor;
+  margin-right: 10px;
   font-weight: bold;
 }
 .title {
@@ -266,4 +274,28 @@ header {
 }
 
 .bottom-content {
+  .headline4 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    img {
+      width: 70px;
+      height: 70px;
+      margin-right: 15px;
+    }
+    p {
+      margin-left: 30px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  .google {
+    img {
+      width: 48%;
+    }
+  }
 }
