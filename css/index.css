@@ -207,9 +207,23 @@ header a {
   width: 70px;
   margin: 0 20px;
 }
+@media (max-width: 500px) {
+  .skills img {
+    display: none;
+  }
+}
 .skills .images {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .mobil {
+    width: 50%;
+    font-size: 10px;
+  }
+  .mobil h2 {
+    font-size: 13px;
+  }
 }
 .languages {
   display: flex;
@@ -247,6 +261,10 @@ header a {
 .experence .headline3 img {
   width: 70px;
   height: 40px;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
 }
 .bottom-content .headline4 {
   display: flex;

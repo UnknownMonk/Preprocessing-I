@@ -225,10 +225,22 @@ header {
     height: 50px;
     width: 70px;
     margin: 0 20px;
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
   .images {
     display: flex;
     justify-content: center;
+  }
+}
+.mobil {
+  @media (max-width: 500px) {
+    width: 50%;
+    font-size: 10px;
+    h2 {
+      font-size: 13px;
+    }
   }
 }
 
@@ -274,6 +286,8 @@ header {
 }
 
 .bottom-content {
+  display: flex;
+  flex-direction: column;
   .headline4 {
     display: flex;
     align-items: center;
