@@ -136,13 +136,16 @@ body {
   font-size: 20px;
   line-height: 1.4;
   font-family: sans-serif;
-  background-color: lightgray;
+  background-image: url('/images/bg.jpg');
 }
 .container {
   width: 900px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 10px 30px;
   background-color: white;
+  -webkit-box-shadow: -2px 1px 98px 31px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -2px 1px 98px 31px rgba(0, 0, 0, 0.74);
+  box-shadow: -2px 1px 98px 31px rgba(0, 0, 0, 0.74);
 }
 h1 {
   font-size: 40px;
@@ -236,6 +239,9 @@ header a {
 }
 .languages .subjects h2 {
   font-size: 20px;
+}
+.languages .subjects p {
+  font-size: 18px;
 }
 .main-content {
   border-bottom: 1px solid black;
