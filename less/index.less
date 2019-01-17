@@ -133,8 +133,11 @@ table {
 * {
   box-sizing: border-box;
 }
-
+//varaibale and mixin
 @linkColor: rgb(223, 73, 57);
+.center() {
+  margin: 0 auto;
+}
 
 html,
 body {
@@ -146,7 +149,7 @@ body {
 }
 
 .container {
-  width: 900px;
+  max-width: 900px;
   margin: 30px auto;
   padding: 10px 30px;
   background-color: white;
@@ -197,6 +200,10 @@ strong {
   display: inline-block;
   margin: 10px 0;
   border-bottom: 3px dotted rgb(223, 73, 57);
+
+  @media (max-width: 500px) {
+    margin: 0 100px;
+  }
 }
 
 //HEADER
@@ -211,6 +218,15 @@ header {
     font-size: 21px;
     font-family: sans-serif;
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin: 0;
+    }
+  }
 }
 .pro-summary {
   margin: 10px 0;
@@ -218,11 +234,20 @@ header {
 .port-summary {
   border-bottom: 1px black solid;
   padding: 10px 0;
+
+  @media (max-width: 500px) {
+    width: 70%;
+    .center;
+  }
 }
 .summary {
   padding-right: 10px;
-}
 
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+}
+//Skills Section
 .skills {
   img {
     height: 50px;
@@ -239,7 +264,8 @@ header {
 }
 .mobil {
   @media (max-width: 500px) {
-    width: 50%;
+    width: 70%;
+    .center;
     font-size: 10px;
     h2 {
       font-size: 13px;
@@ -264,11 +290,14 @@ header {
     }
   }
 }
+
+//Experence
 .main-content {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
   @media (max-width: 500px) {
-    width: 50%;
+    width: 70%;
+    .center;
   }
 }
 .experence {
@@ -312,7 +341,7 @@ header {
     }
   }
 }
-
+//Education
 .bottom-content {
   display: flex;
   flex-direction: column;
@@ -330,7 +359,8 @@ header {
     }
   }
   @media (max-width: 500px) {
-    width: 50%;
+    width: 70%;
+    .center;
     h3 {
       font-size: 10px;
     }

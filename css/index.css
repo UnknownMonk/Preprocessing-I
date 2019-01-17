@@ -139,7 +139,7 @@ body {
   background-image: url('/images/bg.jpg');
 }
 .container {
-  width: 900px;
+  max-width: 900px;
   margin: 30px auto;
   padding: 10px 30px;
   background-color: white;
@@ -185,6 +185,11 @@ strong {
   margin: 10px 0;
   border-bottom: 3px dotted #df4939;
 }
+@media (max-width: 500px) {
+  .title {
+    margin: 0 100px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -195,6 +200,15 @@ header a {
   font-size: 21px;
   font-family: sans-serif;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header a {
+    margin: 0;
+  }
+}
 .pro-summary {
   margin: 10px 0;
 }
@@ -202,8 +216,19 @@ header a {
   border-bottom: 1px black solid;
   padding: 10px 0;
 }
+@media (max-width: 500px) {
+  .port-summary {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 .summary {
   padding-right: 10px;
+}
+@media (max-width: 500px) {
+  .summary {
+    width: 90%;
+  }
 }
 .skills img {
   height: 50px;
@@ -221,7 +246,8 @@ header a {
 }
 @media (max-width: 500px) {
   .mobil {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
     font-size: 10px;
   }
   .mobil h2 {
@@ -249,7 +275,8 @@ header a {
 }
 @media (max-width: 500px) {
   .main-content {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 .experence .headline1 {
@@ -310,7 +337,8 @@ header a {
 }
 @media (max-width: 500px) {
   .bottom-content {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
   }
   .bottom-content h3 {
     font-size: 10px;
