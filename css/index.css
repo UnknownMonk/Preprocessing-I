@@ -1,1 +1,359 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: sans-serif;
+  background-image: url('/images/bg.jpg');
+}
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px 30px;
+  background-color: white;
+  -webkit-box-shadow: -2px 1px 98px 31px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -2px 1px 98px 31px rgba(0, 0, 0, 0.74);
+  box-shadow: -2px 1px 98px 31px rgba(0, 0, 0, 0.74);
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+h3 {
+  font-size: 25px;
+}
+a {
+  color: #df4939;
+}
+strong {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.pound {
+  color: #df4939;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.enter {
+  font-size: 20px;
+  color: #df4939;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.title {
+  font-size: 30px;
+  font-style: italic;
+  margin: 0;
+  display: inline-block;
+  margin: 10px 0;
+  border-bottom: 3px dotted #df4939;
+}
+@media (max-width: 500px) {
+  .title {
+    margin: 0 100px;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header a {
+  margin: 0 20px;
+  font-size: 21px;
+  font-family: sans-serif;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header a {
+    margin: 0;
+  }
+}
+.pro-summary {
+  margin: 10px 0;
+}
+.port-summary {
+  border-bottom: 1px black solid;
+  padding: 10px 0;
+}
+@media (max-width: 500px) {
+  .port-summary {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.summary {
+  padding-right: 10px;
+}
+@media (max-width: 500px) {
+  .summary {
+    width: 90%;
+  }
+}
+.skills img {
+  height: 50px;
+  width: 70px;
+  margin: 0 20px;
+}
+@media (max-width: 500px) {
+  .skills img {
+    display: none;
+  }
+}
+.skills .images {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .mobil {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .mobil h2 {
+    font-size: 13px;
+  }
+}
+.languages {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+.languages .subjects {
+  width: 25%;
+  padding: 0 10px;
+}
+.languages .subjects h2 {
+  font-size: 20px;
+}
+.languages .subjects p {
+  font-size: 18px;
+}
+.main-content {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .main-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.experence .headline1 {
+  display: flex;
+}
+.experence .headline1 img {
+  width: 70px;
+  height: 30px;
+  margin: 0 10px;
+}
+@media (max-width: 500px) {
+  .experence .headline1 h3 {
+    font-size: 10px;
+  }
+}
+.experence .headline2 {
+  display: flex;
+  margin: 20px 0;
+}
+.experence .headline2 img {
+  width: 70px;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  .experence .headline2 h3 {
+    font-size: 10px;
+  }
+}
+.experence .headline3 {
+  display: flex;
+  margin: 20px 0;
+}
+.experence .headline3 img {
+  width: 70px;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  .experence .headline3 h3 {
+    font-size: 10px;
+  }
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content .headline4 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+.bottom-content .headline4 img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+.bottom-content .headline4 p {
+  margin-left: 30px;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .bottom-content h3 {
+    font-size: 10px;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+}
+footer .google img {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  footer {
+    display: none;
+  }
+}
